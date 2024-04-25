@@ -1,0 +1,119 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('fondo.jpg'); /* Reemplaza 'ruta/de/imagen.jpg' con la ruta de tu imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen para que cubra todo el cuerpo */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+}
+
+/* Estilos del encabezado */
+header {
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* Línea debajo del encabezado */
+header::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 80%;
+    height: 3px;
+    background-color: #fff;
+    transform: translateX(-50%);
+}
+
+/* Título del encabezado */
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase; /* Convierte el texto en mayúsculas */
+    font-weight: bold; /* Hace que el texto sea más grueso */
+    color: rgb(143, 21, 143); /* Color del texto */
+    text-shadow: 
+        -1px -1px 0 #fff,  
+         1px -1px 0 #fff,
+        -1px  1px 0 #fff,
+         1px  1px 0 #fff; /* Borde blanco */
+}
+
+/* Contenedor principal */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* Estilos del producto */
+.product {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    filter: none;
+}
+
+.product.out-of-stock img {
+    filter: blur(3px);
+}
+
+/* Detalles del producto */
+.details {
+    padding: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 20px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.stock {
+    font-size: 18px;
+    color: green;
+    margin-bottom: 10px;
+}
+
+.out-of-stock {
+    font-size: 18px;
+    color: red;
+    margin-bottom: 10px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
