@@ -1,111 +1,237 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilo para la imagen con filtro */
+        .carousel img.filtered-image {
+            filter: blur(5px); /* Aplica un filtro de desenfoque a la imagen */
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Promesa Sport</h1>
     </header>
     <main>
-        <section class="product">       <!-- Cuando NO HAY STOCK PONER out-of-stock Y cuando si tengas dejar product -->
-            <img src="Imagenes/Medias_antidelisante_largas.jpg" alt="Producto 1">
-            <div class="details">
-                <h3>AntiDelisante Largas</h3>
-                <p class="price">Precio: $4000</p>
-                <p class="stock">Stock</p>  <!-- lo mismo cuando hay stock .stock y cuadno no .out-of-stock -->
+        <section class="product">
+            <div class="carousel">
+                <img src="Medias/Medias_antidelisante_largas.jpg" alt="Medias largas">   <!--filtered-image para que la iamgen sea nublada agregar al carousel y stock out-of-stock si es que no hay -->
+                <img src="Medias/medias_antidelisante_cortas.jpg " alt="Medias cortas">
+                <!-- Agrega más imágenes según sea necesario -->
             </div>
-        </section>
-        <section class="product">       <!-- Cuando NO HAY STOCK PONER out-of-stock Y cuando si tengas dejar product -->
-            <img src="Imagenes/medias_antidelisante_cortas.jpg" alt="Producto 1">
             <div class="details">
-                <h3>AntiDelisante Cortas</h3>
+                <h3>Medias AntiDelisante</h3>
                 <p class="price">Precio: $4000</p>
                 <p class="stock">Stock</p>
             </div>
-        </section>
-        <section class="product out-of-stock">   
-            <img src="Imagenes/shors.jpg" alt="Producto 1">
-            <div class="details">
-                <h3>Short</h3>
-                <p class="price">Precio: $8000</p>
-                <p class="out-of-stock">Agotado</p>
-            </div>
+            <!-- Agrega las flechas de navegación -->
+            <div class="prev">&#10094;</div>
+            <div class="next">&#10095;</div>
         </section>
         <section class="product">
-            <img src="Imagenes/gorros.jpg" alt="Producto 1">
+            <div class="carousel">
+                <img src="Bolsos/bolso.jpg" alt="Bolso nike">                 <!-- agregar al carousel y stock out-of-stock si es que no hay -->
+                <!-- Agrega más imágenes según sea necesario -->
+            </div>
+            <div class="details">
+                <h3>Bolso Nike</h3>
+                <p class="price">Precio: $20.000</p>
+                <p class="stock">Stock</p>
+            </div>
+            <!-- Agrega las flechas de navegación -->
+            <div class="prev">&#10094;</div>
+            <div class="next">&#10095;</div>
+        </section>
+        <section class="product">
+            <div class="carousel">
+                <img src="Buzos/buzo.jpg" alt="Buzos">
+                <img src="Buzos/IMG-20240423-WA0158.jpg" alt="Buzos"> 
+                <img src="Buzos/IMG-20240423-WA0162.jpg" alt="Buzos boca"> 
+                <img src="Buzos/IMG-20240423-WA0166.jpg" alt="Buzos argentina">   
+                <img src="Buzos/IMG-20240423-WA0172.jpg" alt="Buzos river">               <!-- agregar al carousel y stock out-of-stock si es que no hay -->
+                <!-- Agrega más imágenes según sea necesario -->
+            </div>
+            <div class="details">
+                <h3>Buzos Nike</h3>
+                <p class="price">Precio: $15.000</p>
+                <p class="stock">Stock</p>
+            </div>
+            <!-- Agrega las flechas de navegación -->
+            <div class="prev">&#10094;</div>
+            <div class="next">&#10095;</div>
+        </section>
+        <section class="product">
+            <div class="carousel">
+                <img src="Calzas/calza.jpg" alt="calza">
+             <!-- agregar al carousel y stock out-of-stock si es que no hay -->
+                <!-- Agrega más imágenes según sea necesario -->
+            </div>
+            <div class="details">
+                <h3>Calza</h3>
+                <p class="price">Precio: $12.000</p>
+                <p class="stock">Stock</p>
+            </div>
+            <!-- Agrega las flechas de navegación -->
+            <div class="prev">&#10094;</div>
+            <div class="next">&#10095;</div>
+        </section>
+        <section class="product">
+            <div class="carousel">
+                <img src="Gorros/IMG-20240413-WA0177.jpg" alt="gorros argentina">
+                <img src="Gorros/gorros.jpg" alt="Gorros" class="filtered-image">
+                <img src="Gorros/IMG-20240413-WA0165.jpg" alt="gorros nike" class="filtered-image">
+                <img src="Gorros/IMG-20240413-WA0173.jpg" alt="gorros lascoste">
+                <img src="Gorros/IMG-20240413-WA0175.jpg" alt="gorros river">
+                <img src="Gorros/IMG-20240413-WA0179.jpg" alt="gorros boca" class="filtered-image">               <!-- agregar al carousel y stock out-of-stock si es que no hay -->
+                <!-- Agrega más imágenes según sea necesario -->
+            </div>
             <div class="details">
                 <h3>Gorros Deportivos</h3>
-                <p class="price">Precio: $5000</p>
+                <p class="price">Precio: $5.000</p>
                 <p class="stock">Stock</p>
             </div>
+            <!-- Agrega las flechas de navegación -->
+            <div class="prev">&#10094;</div>
+            <div class="next">&#10095;</div>
         </section>
         <section class="product">
-            <img src="Imagenes/calza.jpg" alt="Producto 1">
+            <div class="carousel">
+                <img src="Shors/chaco.jpg" alt="Short">
+                <img src="Shors/brow.jpg" alt="Short" class="filtered-image">
+                <img src="Shors/calamar.jpg" alt="Short">
+                <img src="Shors/chaca.jpg" alt="Short">
+                <img src="Shors/chicago.jpg" alt="Short">
+                <img src="Shors/def.jpg" alt="Short">
+                <img src="Shors/equipoverde.jpg"Short">
+                <img src="Shors/laferer.jpg" alt="Short" class="filtered-image">
+                <img src="Shors/moron.jpg" alt="Short" class="filtered-image">
+                <img src="Shors/patronato2.jpg" alt="Short">
+                <img src="Shors/patronato.jpg" alt="Short" class="filtered-image">    <!-- agregar al carousel y stock out-of-stock si es que no hay -->
+                <!-- Agrega más imágenes según sea necesario -->
+            </div>
             <div class="details">
-                <h3>Calzas</h3>
+                <h3>Short Acenso</h3>
+                <p class="price">Precio: $8.000</p>
+                <p class="stock">Stock</p>
+            </div>
+            <!-- Agrega las flechas de navegación -->
+            <div class="prev">&#10094;</div>
+            <div class="next">&#10095;</div>
+        </section>
+        <section class="product">
+            <div class="carousel">
+                <img src="MeidasN/medias.jpg" alt="Medias 3/4">   <!--filtered-image para que la iamgen sea nublada agregar al carousel y stock out-of-stock si es que no hay -->
+                <!-- Agrega más imágenes según sea necesario -->
+            </div>
+            <div class="details">
+                <h3>Medias 3/4</h3>
+                <p class="price">Precio: $1500</p>
+                <p class="stock">Stock</p>
+            </div>
+            <!-- Agrega las flechas de navegación -->
+            <div class="prev">&#10094;</div>
+            <div class="next">&#10095;</div>
+        </section>
+        <section class="product">
+            <div class="carousel">
+                <img src="Remeres equipos/Boca.jpg" alt="Remeras equipos">
+                <img src="Remeres equipos/reiverescuado.jpg" alt="Remeras equipos">
+                <img src="Remeres equipos/river.jpg" alt="Remeras equipos">    <!--filtered-image para que la iamgen sea nublada agregar al carousel y stock out-of-stock si es que no hay -->
+                <!-- Agrega más imágenes según sea necesario -->
+            </div>
+            <div class="details">
+                <h3>Remeras Equipo Nacioneles</h3>
                 <p class="price">Precio: $12.000</p>
                 <p class="stock">Stock</p>
             </div>
+            <!-- Agrega las flechas de navegación -->
+            <div class="prev">&#10094;</div>
+            <div class="next">&#10095;</div>
         </section>
-                <section class="product out-of-stock">
-            <img src="Imagenes/remera_acenso.jpg" alt="Producto 1">
-            <div class="details">
-                <h3>Remeras Acenso</h3>
-                <p class="price">Precio: $12.000</p>
-                <p class="out-of-stock">Agotado</p>
+        <section class="product">
+            <div class="carousel">
+                <img src="Top/top.jpg" alt="top">
+                <img src="Top/IMG-20240423-WA0208.jpg" alt="top">
+                <img src="Top/IMG-20240423-WA0214.jpg" alt="top">
+                <img src="Top/IMG-20240423-WA0218.jpg" alt="top">
+                <img src="Top/IMG-20240423-WA0220.jpg" alt="top">
+                <img src="Top/IMG-20240424-WA0023.jpg" alt="top">
+                <img src="Top/rashed-1716577715-IMG-20240424-WA0021.jpg" alt="top">
+                <img src="Top/rashed-1716577715-IMG-20240424-WA0030(1).jpg" alt="top">
+                <img src="Top/rashed-1716577715-IMG-20240424-WA0038.jpg" alt="top">
+                <img src="Top/trashed-1716577715-IMG-20240424-WA0014.jpg" alt="top">
+                <img src="Top/trashed-1716577715-IMG-20240424-WA0016.jpg" alt="top">
+                <img src="Top/trashed-1716577715-IMG-20240424-WA0018.jpg" alt="top">
+                <img src="Top/trashed-1716577715-IMG-20240424-WA0025.jpg" alt="top">
+                <img src="Top/trashed-1716577715-IMG-20240424-WA0030.jpg" alt="top">
+                <img src="Top/trashed-1716577715-IMG-20240424-WA0032.jpg" alt="top">
+                <img src="Top/trashed-1716577715-IMG-20240424-WA0036.jpg" alt="top">
+
+    <!-- agregar al carousel y stock out-of-stock si es que no hay -->
+                <!-- Agrega más imágenes según sea necesario -->
             </div>
-        </section>
-    </section>
-    <section class="product out-of-stock">
-<img src="Imagenes/bolso.jpg" alt="Producto 1">
-<div class="details">
-    <h3>Bolso</h3>
-    <p class="price">Precio: $20.000</p>
-    <p class="out-of-stock">Agotado</p>
-</div>
-</section>
-<section class="product out-of-stock">
-    <img src="Imagenes/buzo.jpg" alt="Producto 1">
-    <div class="details">
-        <h3>Buzo</h3>
-        <p class="price">Precio: $XX.XX</p>
-        <p class="out-of-stock">15.000</p>
-    </div>
-    </section>
-    <section class="product out-of-stock">
-        <img src="Imagenes/remerafutbol.jpg" alt="Producto 1">
-        <div class="details">
-            <h3>Remeras Futbol Argentino</h3>
-            <p class="price">Precio: $12.000</p>
-            <p class="out-of-stock">Agotado</p>
-        </div>
-        </section>
-        <section class="product out-of-stock">
-            <img src="Imagenes/top.jpg" alt="Producto 1">
             <div class="details">
-                <h3>Bolso</h3>
+                <h3>Short Acenso</h3>
                 <p class="price">Precio: $8.000</p>
-                <p class="out-of-stock">Agotado</p>
+                <p class="stock">Stock</p>
             </div>
-            </section>
-            <section class="product out-of-stock">
-                <img src="Imagenes/medias.jpg" alt="Producto 1">
-                <div class="details">
-                    <h3>Medias 3/4</h3>
-                    <p class="price">Precio: $1.500</p>
-                    <p class="out-of-stock">Agotado</p>
-                </div>
-                </section>
-                        
-                        
-        <!-- Agrega más secciones de productos según sea necesario -->
+            <!-- Agrega las flechas de navegación -->
+            <div class="prev">&#10094;</div>
+            <div class="next">&#10095;</div>
+        </section>
+
     </main>
     <footer>
         <p>&copy; 2024 Tienda de Ropa Deportiva</p>
     </footer>
+
+    <!-- Agrega el script JavaScript aquí -->
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+    const prevButtons = document.querySelectorAll(".prev");
+    const nextButtons = document.querySelectorAll(".next");
+    const carousels = document.querySelectorAll(".carousel");
+
+    // Iterar sobre cada sección del carrusel
+    carousels.forEach((carousel, index) => {
+        const images = carousel.querySelectorAll("img");
+        let currentIndex = 0;
+
+        // Función para mostrar la imagen actual en la sección actual
+        function showImage(index) {
+            // Oculta todas las imágenes en la sección actual
+            images.forEach(image => {
+                image.style.display = "none";
+            });
+            // Muestra solo la imagen en el índice actual en la sección actual
+            images[index].style.display = "block";
+        }
+
+        // Función para cambiar a la imagen anterior en la sección actual
+        function prevImage() {
+            currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
+            showImage(currentIndex);
+        }
+
+        // Función para cambiar a la siguiente imagen en la sección actual
+        function nextImage() {
+            currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
+            showImage(currentIndex);
+        }
+
+        // Agrega event listeners a las flechas de navegación en la sección actual
+        prevButtons[index].addEventListener("click", prevImage);
+        nextButtons[index].addEventListener("click", nextImage);
+
+        // Muestra la primera imagen al cargar la página en la sección actual
+        showImage(currentIndex);
+    });
+});
+
+    </script>
 </body>
 </html>

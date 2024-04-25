@@ -39,8 +39,8 @@ h1 {
     text-transform: uppercase; /* Convierte el texto en mayúsculas */
     font-weight: bold; /* Hace que el texto sea más grueso */
     color: rgb(143, 21, 143); /* Color del texto */
-    text-shadow: 
-        -1px -1px 0 #fff,  
+    text-shadow:
+        -1px -1px 0 #fff, 
          1px -1px 0 #fff,
         -1px  1px 0 #fff,
          1px  1px 0 #fff; /* Borde blanco */
@@ -55,6 +55,7 @@ main {
 }
 
 /* Estilos del producto */
+/* Estilos del producto */
 .product {
     margin: 20px;
     padding: 20px;
@@ -62,6 +63,7 @@ main {
     background-color: #fff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    position: relative; /* Añade posición relativa para flechas de navegación */
 }
 
 .product:hover {
@@ -77,37 +79,70 @@ main {
     filter: none;
 }
 
-.product.out-of-stock img {
-    filter: blur(3px);
-}
-
-/* Detalles del producto */
-.details {
+.product .details {
     padding: 10px;
 }
 
-h2 {
-    font-size: 24px;
+.product h3 {
+    font-size: 20px;
     margin-bottom: 10px;
+    color: #333; /* Color del título */
 }
 
-.price {
-    font-size: 20px;
+.product .price {
+    font-size: 18px;
     color: #007bff;
     margin-bottom: 10px;
 }
 
 .stock {
     font-size: 18px;
-    color: green;
+    color: green; /* Color verde para indicar que hay stock */
     margin-bottom: 10px;
 }
 
 .out-of-stock {
     font-size: 18px;
-    color: red;
+    color: red; /* Color rojo para indicar que no hay stock */
     margin-bottom: 10px;
+    text-decoration: line-through; /* Agrega una línea sobre el texto para indicar que está agotado */
 }
+
+.product .out-of-stock img {
+    filter: blur(3px); /* Aplica un efecto de desenfoque a la imagen cuando el producto está agotado */
+}
+
+/* Flechas de navegación */
+/* Flechas de navegación */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px; /* Aumenta el tamaño de las flechas */
+    height: 40px; /* Aumenta el tamaño de las flechas */
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo de las flechas */
+    color: #fff; /* Color del texto de las flechas */
+    font-size: 24px; /* Aumenta el tamaño del texto de las flechas */
+    text-align: center;
+    line-height: 40px; /* Centra el texto verticalmente */
+    cursor: pointer;
+    border-radius: 50%; /* Hace que las flechas sean redondas */
+    transition: background-color 0.3s; /* Agrega una transición para suavizar el cambio de color */
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Cambia el color de fondo al pasar el mouse sobre las flechas */
+}
+
+.prev {
+    left: 10px; /* Ajusta la posición de la flecha izquierda */
+}
+
+.next {
+    right: 10px; /* Ajusta la posición de la flecha derecha */
+}
+
+
 
 /* Pie de página */
 footer {
